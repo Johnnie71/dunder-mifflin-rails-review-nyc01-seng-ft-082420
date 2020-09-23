@@ -1,0 +1,11 @@
+<h1>All the Dogs!</h1>
+<hr>
+
+Select a Dog:
+<ul>
+<%@dogs.each do |d|%>
+   <li>
+    <%= link_to d.name, dog_path(d) %>
+    </li>
+<%end%>
+</ul>
